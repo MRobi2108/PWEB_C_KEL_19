@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+section{
+    position: absolute;
+    width: 1327px;
+    height: 698px;
+    left: 74px;
+    top: 97px;
+    box-shadow: -7px 2px 34px 3px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+    border-radius: 24px;
+}
+
+.gambar-logo{
+    width: 67px;
+    height: 53px;
+    left: 39px;
+    top: 32px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+li{
+    display: inline;
+}
+
+.beranda{
+    position: absolute;
+    width: 152px;
+    height: 33px;
+    left: 767px;
+    top: 58px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+
+    color: #000000;
+}
+
+.bantuan{
+    position: absolute;
+    width: 150px;
+    height: 33px;
+    left: 995px;
+    top: 58px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+
+    color: #000000;
+}
+
+.profil{
+    position: absolute;
+    width: 95px;
+    height: 33px;
+    left: 1221px;
+    top: 58px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+
+    color: #000000;
+}
+
+.panahatas{
+    position: absolute;
+    left: 3%;
+    right: -3.29%;
+    top: 5%;
+    bottom: 6.12%;
+    width: -30%;
+    
+    transform: rotate(-180deg);
+    opacity: 0.7;
+}
+
+h5{
+    font-family: Roboto;
+    color: #777777;
+    margin-left: 130px;
+    font-size: 25px;
+}
+
+.tulisan-mapel{
+    width: 388px;
+    height: 120px;
+    left: 80px;
+    top: 245px;
+
+    font-family: Epilogue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 68px;
+
+    color: #000000;
+}
+
+.kotakbiru{
+    height:50px;
+    width: 35%;
+    position: absolute;
+    left: 135px;
+    top: 110px;
+    background-color: #A1C6CE;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.text{
+    flex-grow: 1;
+    border-radius: 24px;
+}
+
+.about{
+    position: absolute;
+    width: 72px;
+    height: 47px;
+    left: 400px;
+    top: 630px;
+}
+
+.our{
+    position: absolute;
+    width: 32px;
+    height: 31px;
+    left: 650px;
+    top: 630px;
+}
+
+.location{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 890px;
+    top: 630px;
+}
+
+.tabout{
+    position: absolute;
+    width: 61px;
+    height: 18px;
+    left: -13px;
+    top: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.tour{
+    position: relative;
+    width: 89px;
+    height: 18px;
+    left: -27px;
+    top: -15px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.tlocation{
+    position: absolute;
+    width: 61px;
+    height: 18px;
+    left: -23px;
+    top: 18px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.gambarsekolah{
+    flex-grow: 1;
+}
+
+.gambarsekolah1{
+    width: 978px;
+    height: 653px;
+    left: 520px;
+    top: 150px;
+    filter: drop-shadow(-16px 4px 65px rgba(0, 0, 0, 0.25));
+    border-radius: 39px;
+}
+
+h1{
+    z-index: 1;
+    position: absolute;
+    width: 404px;
+    height: 44px;
+    left: 150px;
+    top: 50px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 41px;
+    line-height: 50px;
+
+    color: #000000;
+}
+
+
+.mtk{
+    position: absolute;
+    width: 249px;
+    height: 303px;
+    left: 60px;
+    top: 200px;
+
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: -3px 4px 26px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+}
+
+.gmtk{
+    position: absolute;
+    width: 198px;
+    height: 198px;
+    left: 26px;
+    top: 30px;
+
+    border-radius: 13px;
+}
+
+.tmtk{ 
+    position: absolute;
+    width: 152px;
+    height: 24px;
+    left: 47px;
+    top: 230px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 27px;
+
+    color: #777777;
+}
+
+.relasi{
+    position: absolute;
+    width: 297px;
+    height: 60px;
+    left: 453px;
+    top: 250px;
+
+    background: #A1C6CE;
+    border-radius: 14px;
+}
+
+.trelasi{
+    font-family: Montserrat;
+    margin-top: 16px;
+    margin-left: 16px;
+    color: #181818;
+}
+
+.ruang{
+    position: absolute;
+    width: 297px;
+    height: 60px;
+    left: 453px;
+    top: 350px;
+
+    background: #A1C6CE;
+    border-radius: 14px;
+}
+
+.truang{
+    font-family: Montserrat;
+    margin-top: 16px;
+    margin-left: 16px;
+    color: #181818;
+}
+
+.datar{
+    position: absolute;
+    width: 297px;
+    height: 60px;
+    left: 453px;
+    top: 450px;
+
+    background: #A1C6CE;
+    border-radius: 14px;
+}
+
+.tdatar{
+    font-family: Montserrat;
+    margin-top: 16px;
+    margin-left: 16px;
+    color: #181818;
+}
+
+.pytha{
+    position: absolute;
+    width: 297px;
+    height: 60px;
+    left: 853px;
+    top: 250px;
+
+    background: #A1C6CE;
+    border-radius: 14px;
+}
+
+.tpytha{
+    font-family: Montserrat;
+    margin-top: 18px;
+    margin-left: 16px;
+    color: #181818;
+}
+
+.pangkat{
+    position: absolute;
+    width: 297px;
+    height: 60px;
+    left: 853px;
+    top: 350px;
+
+    background: #A1C6CE;
+    border-radius: 14px;
+}
+
+.tpangkat{
+    font-family: Montserrat;
+    margin-top: 8px;
+    margin-left: 16px;
+    color: #181818;
+}
+
+.sudut{
+    position: absolute;
+    width: 297px;
+    height: 60px;
+    left: 853px;
+    top: 450px;
+
+    background: #A1C6CE;
+    border-radius: 14px;
+}
+
+.tsudut{
+    font-family: Montserrat;
+    margin-top: 16px;
+    margin-left: 16px;
+    color: #181818;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}

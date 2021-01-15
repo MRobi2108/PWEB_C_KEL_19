@@ -58,7 +58,7 @@ li{
     color: #000000;
 }
 
-.login{
+.profil{
     position: absolute;
     width: 95px;
     height: 33px;
@@ -74,7 +74,26 @@ li{
     color: #000000;
 }
 
-.tulisan-login{
+.panahatas{
+    position: absolute;
+    left: 3%;
+    right: -3.29%;
+    top: 5%;
+    bottom: 6.12%;
+    width: -30%;
+    
+    transform: rotate(-180deg);
+    opacity: 0.7;
+}
+
+h5{
+    font-family: Roboto;
+    color: #777777;
+    margin-left: 130px;
+    font-size: 25px;
+}
+
+.tulisan-mapel{
     width: 388px;
     height: 120px;
     left: 80px;
@@ -90,13 +109,12 @@ li{
 }
 
 .kotakbiru{
-    background-color: #A1C6CE;
     height:50px;
-    width:100%;
-}
-
-.passb{
-    font-family: Epilogue;
+    width: 35%;
+    position: absolute;
+    left: 135px;
+    top: 110px;
+    background-color: #A1C6CE;
 }
 
 .flex-row{
@@ -113,29 +131,73 @@ li{
     position: absolute;
     width: 72px;
     height: 47px;
-    left: 30px;
-    top: 600px;
-    font-family: Roboto;
+    left: 400px;
+    top: 630px;
 }
 
 .our{
     position: absolute;
     width: 32px;
     height: 31px;
-    left: 150px;
-    top: 600px;
-    font-family: Roboto;
+    left: 650px;
+    top: 630px;
 }
 
 .location{
     position: absolute;
     width: 32px;
     height: 32px;
-    left: 280px;
-    top: 600px;
-    font-family: Roboto;
+    left: 890px;
+    top: 630px;
 }
 
+.tabout{
+    position: absolute;
+    width: 61px;
+    height: 18px;
+    left: -13px;
+    top: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.tour{
+    position: relative;
+    width: 89px;
+    height: 18px;
+    left: -18px;
+    top: -15px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.tlocation{
+    position: absolute;
+    width: 61px;
+    height: 18px;
+    left: -23px;
+    top: 18px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+}
 
 .gambarsekolah{
     flex-grow: 1;
@@ -151,68 +213,61 @@ li{
 }
 
 h1{
-    position: relative;
-    top: 35px;
-    left: 25px;
-}
+    z-index: 1;
+    position: absolute;
+    width: 404px;
+    height: 44px;
+    left: 150px;
+    top: 50px;
 
-form{
-    font-family: Helvetica;
-    font-style: italic;
+    font-family: Montserrat;
+    font-style: normal;
     font-weight: bold;
-    color: #919599;
-    font-size: 20px;
-    padding-left:30px;
+    font-size: 41px;
+    line-height: 50px;
+
+    color: #000000;
+
 }
 
-.pass{
+.mtk{
+    position: absolute;
+    width: 249px;
+    height: 303px;
+    left: 40px;
+    top: 200px;
+
     background: #FFFFFF;
-    border: 1.1px solid #ACACAC;
+    border: 1px solid #FFFFFF;
     box-sizing: border-box;
-    box-shadow: -3px 4px 14px -2px rgba(0, 0, 0, 0.25);
-    border-radius: 7px;
+    box-shadow: -3px 4px 26px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+}
+
+.gmtk{
+    position: absolute;
+    width: 198px;
+    height: 198px;
+    left: 26px;
+    top: 30px;
+
+    border-radius: 13px;
+}
+
+.tmtk{ 
+    position: absolute;
+    width: 152px;
+    height: 24px;
+    left: 47px;
+    top: 230px;
+
     font-family: Roboto;
-    opacity: 0.7;
-}
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 27px;
 
-.upass{
-    background: #FFFFFF;
-    border: 1.1px solid #ACACAC;
-    box-sizing: border-box;
-    box-shadow: -3px 4px 14px -2px rgba(0, 0, 0, 0.25);
-    border-radius: 7px;
-    font-family: Roboto;
-    opacity: 0.7;
-}
-
-.tombolkirim{
-    border: 1.1px solid #ACACAC;
-    box-sizing: border-box;
-    box-shadow: -3px 4px 14px -2px rgba(0, 0, 0, 0.25);
-    border-radius: 7px;
-}
-
-.textkirim{
-    font-family: Roboto;
-    color: #FFFFFF;
-}
-
-input, button{
-    width:330px;
-    height:30px;
-    border-radius:10px;
-}
-
-.cekbox{
-    width: 14px;
-    height: 14px;
-    left: 104px;
-    top: 488px;
-}
-
-button{
-    background-color: #ff0000;
-    margin-top: 20px;
+    color: #777777;
 }
 
 a{
@@ -220,10 +275,9 @@ a{
     color: #000000;
 }
 
-.warnapassword{
-    color: #ff0000;
-}
-
-.passb{
-    font-style: normal;
+.lorem{
+    font-family: Helvetica;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-indent: 45px;
 }

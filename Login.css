@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 section{
     position: absolute;
@@ -23,36 +24,6 @@ section{
 
 li{
     display: inline;
-}
-
-.lorem1{
-    width: 425px;
-    height: 93px;
-    left: 95px;
-    top: 384px;
-
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 23px;
-
-    color: #000000;
-}
-
-.lorem2{
-    width: 425px;
-    height: 93px;
-    left: 95px;
-    top: 490px;
-
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 23px;
-
-    color: #000000;
 }
 
 .beranda{
@@ -131,40 +102,26 @@ li{
     
 }
 
+.tombollogin{
+    border: 1.1px solid #ACACAC;
+    box-sizing: border-box;
+    box-shadow: -3px 4px 14px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+
+.textlogin{
+    font-family: Roboto;
+    color: #FFFFFF;
+}
+
 .text{
     flex-grow: 1;
     border-radius: 24px;
 }
 
-.about{
-    position: absolute;
-    width: 72px;
-    height: 47px;
-    left: 30px;
-    top: 600px;
-
-}
-
-.our{
-    position: absolute;
-    width: 32px;
-    height: 31px;
-    left: 150px;
-    top: 600px;
-
-}
-
-.location{
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 280px;
-    top: 600px;
-}
-
-
 .gambarsekolah{
     flex-grow: 1;
+    margin-top: 45px;
 }
 
 .gambarsekolah1{
@@ -191,6 +148,37 @@ form{
     padding-left:30px;
 }
 
+label{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+}
+
+.nisn{
+    background: #FFFFFF;
+    border: 1.1px solid #ACACAC;
+    box-sizing: border-box;
+    box-shadow: -3px 4px 14px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    font-family: Roboto;
+    opacity: 0.7;
+    padding: 10px 15px;
+    height: 35px;
+}
+
+.pass{
+    background: #FFFFFF;
+    border: 1.1px solid #ACACAC;
+    box-sizing: border-box;
+    box-shadow: -3px 4px 14px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    font-family: Roboto;
+    opacity: 0.7;
+    padding: 10px 15px;
+    height: 35px;
+}
+
 input, button{
     width:330px;
     height:30px;
@@ -205,7 +193,8 @@ input, button{
 }
 
 .ingatsaya{
-    font-size:15px;
+    font-size:13px;
+    font-family: Roboto;
 }
 
 button{
@@ -213,9 +202,7 @@ button{
 }
 
 .lupas{
-    font-size:15px;
     text-align: center;
-    color: #E13E3E;
 }
 
 a{
@@ -225,4 +212,79 @@ a{
 
 .warnapassword{
     color: #E13E3E;
+    font-family: Roboto;
+    font-size: 15px;
+    text-align: center;
+}
+
+.about{
+    position: absolute;
+    width: 72px;
+    height: 47px;
+    left: 30px;
+    top: 630px;
+}
+
+.our{
+    position: absolute;
+    width: 32px;
+    height: 31px;
+    left: 158px;
+    top: 630px;
+}
+
+.location{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 300px;
+    top: 630px;
+}
+
+.tabout{
+    position: absolute;
+    width: 61px;
+    height: 18px;
+    left: -13px;
+    top: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.tour{
+    position: relative;
+    width: 89px;
+    height: 18px;
+    left: -27px;
+    top: -15px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.tlocation{
+    position: absolute;
+    width: 61px;
+    height: 18px;
+    left: -23px;
+    top: 18px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
 }

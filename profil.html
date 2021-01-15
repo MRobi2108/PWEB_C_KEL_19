@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profil.css">
+    <title>Profil</title>
+    <style>
+        body{
+            background-color: #E0F3FD;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+		<div class="menu-mobile">
+			<a href="#" onclick="showMenu()"></a>
+		</div>
+    <ul id="menu">
+        <li class="gambar-logo"><img src="logo.png" alt="logo"></li>
+        <li class="tulisan-edu"><img src="education.png" alt="education"></li>
+        <li class="beranda"><a href="index.html">BERANDA</a></li>
+        <li class="bantuan"><a href="#">BANTUAN</a></li>
+        <li class="profil"><a href="profil.html">PROFIL</a></li>
+    </ul>
+    </nav>
+
+	<section id="box-profile">
+		<div class="img-profile">
+			<div class="photo" style="background-image: url(profile.jpg);"></div>
+		</div>
+		<div class="description">
+			<h1 id="pName">Fahreza Yogiya Pramanda</h1>
+			<p id="pKelas">Kelas 9-A</p>
+			<a href="#input-form" class="button bg-green" onclick="editForm()">Edit</a>
+			<a href="Login.html" class="button border-red">Logout</a>
+		</div>
+		<div class="information">
+			<div class="data">
+				<p class="field">NISN</p>
+				<p id="pNISN" class="text-gray">007658592654</p>
+			</div>
+			<div class="data">
+				<p class="field">Tempat Lahir</p>
+				<p id="pLahir" class="text-gray">Jember</p>
+			</div>
+			<div class="data">
+				<p class="field">Alamat</p>
+				<p id="pAlamat" class="text-gray">Jember, Indonesia</p>
+			</div>
+			<div class="data">
+				<p class="field">Email</p>
+				<p id="pEmail" class="text-gray">fahrezayogiya10@gmail.com</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="input-form">
+		<!-- <form method="#" action="#"> -->
+			<div class="form">
+				<label>Name</label>
+				<input id="inpName" type="text" name="name">
+			</div>
+			<div class="form">
+				<label>Kelas</label>
+				<input id="inpKelas" type="text" name="kelas">
+			</div>
+			<div class="form">
+				<label>NISN</label>
+				<input id="inpNISN" type="text" name="nisn">
+			</div>
+			<div class="form">
+				<label>Tempat Lahir</label>
+				<input id="inpLahir" type="text" name="lahir">
+			</div>
+			<div class="form">
+				<label>Alamat</label>
+				<input id="inpAlamat" type="text" name="alamat">
+			</div>
+			<div class="form">
+				<label>Email</label>
+				<input id="inpEmail" type="email" name="email">
+			</div>
+			<div class="form">
+				<input onclick="simpanForm()" type="submit" name="submit" value="SUBMIT" class="bg-blue">
+			</div>			
+		<!-- </form> -->
+    </section>
+    
+	<script>
+		var formMenu = document.getElementById("input-form");
+		formMenu.style.display = "none";
+
+		function editForm(){
+			if(formMenu.style.display === "none"){
+				formMenu.style.display = "block";
+			}else{
+				formMenu.style.display = "none"
+			}
+
+			var name = document.getElementById("pName").innerHTML;
+			var kelas = document.getElementById("pKelas").innerHTML;
+			var nisn = document.getElementById("pNISN").innerHTML;
+			var lahir = document.getElementById("pLahir").innerHTML;
+			var alamat = document.getElementById("pAlamat").innerHTML;
+			var email = document.getElementById("pEmail").innerHTML;
+
+			document.getElementById("inpName").value = name;
+			document.getElementById("inpKelas").value = kelas;
+			document.getElementById("inpNISN").value = nisn;
+			document.getElementById("inpLahir").value = lahir;
+			document.getElementById("inpAlamat").value = alamat;
+			document.getElementById("inpEmail").value = email;
+		}
+
+		function simpanForm(){
+			formMenu.style.display = "none";
+			var name = document.getElementById("inpName").value;
+			var kelas = document.getElementById("inpKelas").value;
+			var nisn = document.getElementById("inpNISN").value;
+			var lahir = document.getElementById("inpLahir").value;
+			var alamat = document.getElementById("inpAlamat").value;
+			var email = document.getElementById("inpEmail").value;
+
+			document.getElementById("pName").innerHTML = name;
+			document.getElementById("pKelas").innerHTML = kelas;
+			document.getElementById("pNISN").innerHTML = nisn;
+			document.getElementById("pLahir").innerHTML = lahir;
+			document.getElementById("pAlamat").innerHTML = alamat;
+			document.getElementById("pEmail").innerHTML = email;
+		}
+
+
+		function showMenu(){
+			var menu = document.getElementById("menu");
+			var box = document.getElementById("box-profile");
+
+			if(menu.style.display === "block"){
+				menu.style.display = "none";
+				box.style.paddingTop ="0px";
+			}else{
+				menu.style.display = "block";
+				box.style.paddingTop = "125px";
+			}
+		}
+	</script>
+</body>
+</html>

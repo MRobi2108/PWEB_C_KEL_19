@@ -9,6 +9,76 @@
         body{
             background-color: #E0F3FD ;
         }
+
+        label{
+            font-style: normal;
+        }
+
+        .textlogin a{
+            color: black;
+            margin-top: 20px;
+        }
+
+        .tombollogin{
+            border: 1.1px solid #ff0000;
+            box-sizing: border-box;
+            box-shadow: -3px 4px 14px -2px rgba(0, 0, 0, 0.25);
+            border-radius: 7px;
+            background-color: #ff0000;
+            font-family: Roboto;
+            color: white;
+        }
+
+        input, button {
+            margin: 10px 0px;
+            height: 33px;
+            border-radius: 5px;
+            border: 1px solid rgb(128, 128, 128);
+            padding: 0px 5px;
+            background: #FFFFFF;
+            border: 1.1px solid #ACACAC;
+            box-sizing: border-box;
+            box-shadow: -3px 4px 14px -2px rgb(79, 149, 255);
+            border-radius: 7px;
+            font-family: Roboto;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.672);
+        }
+        .modal.invalid {
+            position: static;
+            background-color: transparent;
+            color: red;
+            text-align: center;
+            font-family: Roboto;
+            font-style: normal;
+        }
+        .modal.show {
+            display: block;
+            animation: fade .6s forwards;
+        }
+        .modal_dialog {
+            position: relative;
+            width: auto;
+            max-width: fit-content;
+            margin: 50px auto;
+        }
+        .modal_content {
+            background-color: white;
+            border-radius: 5px;
+            margin-top: 100px;
+        }
+        .modal_content .modal_header {
+            padding: 30px 50px;
+            font-family: Roboto;
+        }
     </style>
 </head>
 <body>
@@ -16,9 +86,9 @@
         <ul id="menu">
             <li class="gambar-logo"><img src="logo.png" alt="logo"></li>
             <li class="tulisan-edu"><img src="education.png" alt="education"></li>
-            <li class="beranda"><a href="#">BERANDA</a></li>
+            <li class="beranda"><a href="Login.html">BERANDA</a></li>
             <li class="bantuan"><a href="#">BANTUAN</a></li>
-            <li class="login"><a href="#">LOGIN</a></li>
+            <li class="login"><a href="Login.html">LOGIN</a></li>
         </ul>
         </nav>
         
@@ -30,31 +100,39 @@
                     <h1>LOGIN</h1> 
                 </div>
                 <div class="kotakbiru">
-    
+
                 </div>
-                <form action="">
-                    <div>
-                    NISN
-                    </div>
-                    <input type="number" placeholder="Masukkan NISN Anda">
-                    <div>
-                    Password
-                    </div>
-                    <input type="password" placeholder="Masukkan Password Anda">
+
+                <form id="formLogin" name="login">
+                    <label for="nisn">NISN</label>
+                    <input type="number" name="nisn" placeholder="Masukkan NISN">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Masukkan Password">
                     <div class="ingatsaya">
-                        <input class="cekbox"type="checkbox"> Ingat Saya
+                        <input class="cekbox"type="checkbox"> Ingat saya
                     </div>
-                    <button>
-                        LOGIN
+                    <button class="tombollogin" type="submit" data-toggle="modal">
+                        <a class="textlogin" href="index.html">LOGIN</a>
                     </button>
+
+                    <div class="modal invalid">NISN atau Password salah</div>
+                </form>
+                
+                <div class="modal success">
+                    <div class="modal_dialog">
+                        <div class="modal_content">
+
+                        </div>
+                    </div>
+                </div>        
                     <div class="lupas">
-                    <a class="warnapassword" href=".html">Lupa Password </a>
+                    <a class="warnapassword" href="lupapassword.html">Lupa Password</a>
                     </div>
                 </form>
                 <div class="flex-row">
-                    <div class="about"><img src="about.png" alt="about">ABOUT</div>
-                    <div class="our"><img src="our.png" alt="our team"> OUR TEAM</div>
-                    <div class="location"><img src="location.png" alt="location">LOCATION</div>
+                    <div class="about"><img src="about.png" alt="about"><h3 class="tabout">ABOUT</h3></div>
+                    <div class="our"><img src="our.png" alt="our team"><h3 class="tour">OUR TEAM</h3></div>
+                    <div class="location"><img src="location.png" alt="location"><h3 class="tlocation">LOCATION</h3></div>
                 </div>
             </div>
             <div class="gambarsekolah">
@@ -62,5 +140,34 @@
             </div>
         </div> 
         </section>
+    
+        <script>
+            let htmlBody = document.getElementById("htmlBody");
+            let button = document.querySelector('button[data-toggle="modal"]');
+            let modalSuccess =  document.querySelector('.success');
+            let modalInvalid =  document.querySelector('.invalid');
+            
+            button.addEventListener('click', function() {
+                let nisn = document.forms["login"]["nisn"].value;
+                let password = document.forms["login"]["password"].value;
+
+                if (nisn == "007654321" && password == "abcdefg") {
+                    window.location.href = "index.html";
+                    modalInvalid.classList.remove('show');
+                } else {
+                    modalInvalid.classList.add('show');
+                    htmlBody.style.backgroundColor = "white";
+                }
+            });
+
+            modalSuccess.addEventListener('click', function() {
+                this.classList.remove('show');
+            });
+
+            let formLogin = document.getElementById("formLogin")
+            formLogin.addEventListener("click", function(event){
+                event.preventDefault()
+            });
+    </script>
 </body>
 </html>
